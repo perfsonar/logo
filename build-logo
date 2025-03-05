@@ -60,13 +60,13 @@ do
 
 	    case "${COLOR}" in
 		black)
-		    true  # Default is black
+		    sed -i \
+			-e 's/#808080/#000000/g' \
+			"${FILENAME}"
 		    ;;
 		white)
-		    #sed -i -e 's/\([";]\)stroke:#000000/\1stroke:#ffffff/g' "${FILENAME}"
 		    sed -i \
-			-e 's/fill:#000000;fill-opacity:1/fill:#ffffff;fill-opacity:1/g' \
-			-e 's/stroke:#000000;stroke-width:/stroke:#ffffff;stroke-width:/g' \
+			-e 's/#808080/#ffffff/g' \
 			"${FILENAME}"
 		    ;;
 		*)
