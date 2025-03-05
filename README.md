@@ -50,6 +50,9 @@ It was created in Inkscape, and edits should be done there as well.
 The files contain Inkscape-specific XML but should still work fine
 with anything that wants to render it.
 
+Note that anything that will be rendered in black or white must be 50%
+gray (RGBA 808080ff).
+
 Because there's no easy, practical way to automatically derive
 versions of the logo with proper bounding boxes and margins and text
 converted to paths, the repository includes files where this has been
@@ -62,16 +65,18 @@ done.
  * Select all text objects
  * Convert them to paths (`Shift` + `Ctrl` + `C`)
     * **DO NOT SAVE `original.svg` AFTER THIS POINT.**
- * Make all layers visible
+ * Select all objects
  * Open _Document Properties_ (`Shift` + `Ctrl` + `D`)
- * Expand _Resize page to content...`
- * Make sure all four margins are set to `15.0`.
- * Click _Resize page to drawing or selection_.
- * Save as `parts.svg`.
- * Make the `powered` layer invisible.
- * Click _Resize page to drawing or selection_ in _Document Properties_.
- * Save as `parts-text.svg`.
- * Make the `text` layer invisible.
- * Click _Resize page to drawing or selection_ in _Document Properties_.
+ * Click _Resize page to content_
+ * Save as `parts.svg`
+ * Delete the _Powered_ text object
+ * Select all remaining objects
+ * Open _Document Properties_ (`Shift` + `Ctrl` + `D`)
+ * Click _Resize page to content_
+ * Save as `parts-text.svg`
+ * Delete the text objects (_perfS_ and _NAR_)
+ * Select all remaining objects
+ * Open _Document Properties_ (`Shift` + `Ctrl` + `D`)
+ * Click _Resize page to content_
  * Save as `parts-icon.svg`.
  * Quit Inkscape
