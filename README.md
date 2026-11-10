@@ -80,3 +80,11 @@ done.
  * Click _Resize page to content_
  * Save as `parts-icon.svg`.
  * Quit Inkscape
+
+
+## QR Code
+
+The image in `qr-code.svg` was created using [QRCode
+Monkey](https://www.qrcode-monkey.com) with the logo as it existed in
+November, 2026.  It is in no way connected to the other SVG files and
+will not be updated as the logo changes.
